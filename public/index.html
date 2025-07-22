@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <img src="images/bg.jpg" alt="">--> 
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Used to add the website where I will be linking my icos from: -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' 
+    rel='stylesheet'>
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Portfolio website</title>
+</head>
+
+<body>
+    <div class="home_circle">
+
+    </div>
+    
+    <nav>
+        <a href="#" class = "logo" ><span>OA</span> </a>
+        <ul class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#Projects">Projects</a>
+            <!-- <a href="#contact">Contact</a> -->
+        </ul>
+        <!--Diff between an id and a class is that an id should be unique
+        but a class can be reused. "i" is used to italicize things -->
+        <!-- <i class="bx bx-menu-alt-right" id="menu"></i>  -->
+         <!-- i tag is also used to add icons... -->
+        <a href="https://docs.google.com/document/d/15bx5w6itOr2MkXTo_YjRsiiTMItWhS0G/edit?usp=sharing&ouid=110801441156730051472&rtpof=true&sd=true" class="btn">Resume</a>
+    </nav>
+    
+    <section id="home">
+       
+        <img class = "profile" src="images/profile1.png" alt="">
+        
+        <div class="info-box">
+            <h1><span>Hello, I'm Osinachi</span></h1>
+            <h3><span>Computer Science major</span> at Tufts University</h3>
+            <p>My passion is creating innovative solutions both in business 
+                and technological spaces.
+               
+            </p>
+            <p> <h4><span> Great to meet you!</span></h4></p>
+
+        
+
+            <div class="btn-box">
+                <a class="btn"href="https://docs.google.com/document/d/15bx5w6itOr2MkXTo_YjRsiiTMItWhS0G/edit?usp=sharing&ouid=110801441156730051472&rtpof=true&sd=true">Resume</a>
+            </div>
+
+            <ul class="icons">
+                <a class="icon"   href="https://www.linkedin.com/in/osinachi-atama/">
+                    <i class='bx bxl-linkedin' ></i></a>
+                <a  class="icon" href="https://github.com/OsinachiAtama">
+                    <i class='bx bxl-github' ></i>
+                </a>
+            </ul>
+            <footer>
+                <div>
+                    <span><i class='bx bxl-gmail'></i>
+                        osinachi.atama@gmail.com
+                    </span>
+                </div>
+    
+                <div>
+                    <span><i class='bx bxs-phone' ></i>
+                       +1 857 829 9689
+                    </span>
+                </div>
+            </footer>
+        </div>
+
+        
+
+
+    </section>
+
+
+  
+    <section id="about">
+        <div class="about-box">
+            <div class="about-info">
+                <h1><span>About me</span></h1>
+                <p> I love to learn and I love collaboration. While I can work 
+                    excellently to achieve my goals, I believe I function best 
+                    in a team. My biggest interests are technology, entreprenuership,
+                    and the intersection between them. In short, I love to create 
+                    efficient and profitable solutions to problems using technology.
+                 
+                </p>
+            </div>
+
+            <h2><span>Skills</span></h2>
+
+            <div class=" skills"> 
+                <ul>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i>HTML</span>
+                    </li>
+
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i>CSS</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i>C++</span>
+                    </li>
+
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i>Python</span>
+                    </li>
+                </ul>
+            </div>
+             
+        </div>
+        <img src="./images/profile1.png" alt="">
+    </section>
+
+    <div class="project_circle">
+
+    </div> 
+    <section id="Projects">
+        <h1 class="header"><span>Projects</span></h1>
+        
+        <div class="project-container">
+            <div class="box">
+                <h1><span>Plasti-bot</span></h1>
+                <p>
+                    Collaborating with peers at Tufts IDEA lab to create an 
+                    AI model that can sort plastics according to type.
+                </p>
+                <p><span>Featuring: Hyperspectral imaging, Convolutional 
+                    Neural Networks(CNN). 
+                </span></p>
+                <img src="./images/plastic.png" alt="">
+
+            </div>
+
+            <div class="box">
+                <h1><span>Floor</span></h1>
+                <p>
+                    Developed a demo chatbot to help new hires get acquainted 
+                    with Turner's Astrazeneca jobsite.
+                </p>
+                <p><span>Featuring: IBM WatsonX Assistant 
+                </span></p>
+                <img src="./images/turner_cb.png" alt="">
+
+            </div>
+
+            <div class="box">
+                <h1><span>Calc-U-Later</span></h1>
+                <p>
+                  Designed a GUI standalone calculator with PEDMAS and 
+                  trigonometric functiions . 
+                </p>
+                <p><span>Featuring: Tkinter, PyInstaller
+                </span></p>
+                <img src="./images/calc.png" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- <div class="contact_circle">
+
+    </div>  -->
+
+    <!-- <section id="contact">
+        <h1 class="header"><span>Contact</span></h1>
+
+        <form action="#">
+            <div class="input-box">
+                <span>Full Name</span>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+
+            <div class="input-box">
+                <span>Your Email</span>
+                <input type="text" placeholder="Enter your email">
+            </div>
+
+            <div class="input-box">
+                <span>Your Message</span>
+                <input type="text" placeholder="Enter your message">
+            </div>
+
+            <div class="btn">Submit</div>
+        </form>
+
+        <footer>
+            <div>
+                <span><i class='bx bxl-gmail'></i>
+                    osinachi.atama@gmail.com
+                </span>
+            </div>
+
+            <div>
+                <span><i class='bx bxs-phone' ></i>
+                   +1 857 829 9689
+                </span>
+            </div>
+        </footer>        -->
+
+    </section>
+    <script src = "script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,604 @@
+/*fonts
+nexa
+aquavgrotesque
+*/
+*{
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+
+}
+
+:root{
+    --background: rgb(223, 219, 230);
+    --second-background:rgb(220, 209, 232);
+}
+
+body{ 
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+.home_circle{
+    top: 0;
+    width: 500px;
+    height: 300px; 
+    border-bottom-right-radius: 100%;
+    border: #46036f 3px solid;
+    border-top: none;
+    border-left:none ;
+    position: absolute;
+    z-index: 1;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding:2em 15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(236, 232, 240, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+ul{ 
+    display: flex;
+    align-items: center;
+    /*Creates a gap between every element in ul*/
+    gap: 3em;
+}
+
+nav ul a{
+    color:black; 
+    opacity:0.7;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul a:hover{
+    opacity: 1;
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8; 
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+
+.btn{
+    padding:0.5em 1em;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border:2px solid black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: black;
+    color: var(--background);
+    
+}
+
+span{
+    /*Sets the background of the text*/
+    background: linear-gradient(to right, #c0a3d2, #46036f );
+    /*Makes that background to only appear behind the text*/
+    background-clip: text;
+    /*Makes the text transparent so that it gets the color behind it..
+    Soo cool*/
+    color: transparent;
+}
+
+#menu{
+    color: black;
+    font-size: 3em;
+
+}
+
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+
+#home{
+    /* border-color: #c0a3d2;
+    border-style: solid ; */
+    display: flex;
+    /*This stacks everything in the flex from top to bottom*/
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+    color: black;
+    margin-top: 3em;
+    margin-left: 3em;
+  
+    z-index: 1;
+}
+
+
+
+.profile{
+    width: 40vh; /*25% view port height, useful in creating responsive designs
+    vw means viewport width*/
+    border-radius: 50%;
+    /* margin-top: 3em; */
+    z-index: 2;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap:0.5em;
+    max-width: 650px;
+}
+
+.info-box h1{
+    font-size: 4.7em;
+    font-weight: 500;
+}
+
+.info-box h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.info-box p{
+    opacity: 0.7;
+}
+
+.btn-box{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    
+}
+
+.btn-box .btn:nth-of-type(1){
+    background-color:black;
+    color:var(--background);
+   
+}
+
+.btn-box .btn:nth-of-type(1):hover{
+    background-color:var(--background);
+    color:black;
+}
+
+.icon{
+
+    font-size: 3em ;
+    color:  #46036f;
+   
+}  
+
+
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #c0a3d2, #46036f ) ;
+}
+
+/*---------------------About page-------------------*/
+
+
+.about_circle{
+    width: 400px;
+    height: 300px; 
+    border: #46036f solid 3px;
+    border-top: none;
+    border-right: none ;
+    border-bottom-left-radius: 100%;
+    right: 0px;    
+    position: absolute;
+    z-index: 1;
+}
+#about{
+    background-color: var(--second-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5em;
+   
+}
+
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+    z-index: 3;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+
+.about-box h1{
+    font-size: 5em;
+}
+
+.about-box p{
+    color:black;
+    opacity: 0.8;
+}
+
+.skills{
+    display: flex;
+    text-align: left;
+    gap:10em;
+}
+
+.skills ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity:0.8;
+    align-items: baseline;
+}
+
+.skills ul li span{
+    display:flex;
+    align-items: center;
+    gap:0.5em;
+    font-size: 1.3em;
+    transition: 0.3s ease-in-out;
+}
+
+.skills ul li span:hover{
+    transform: translateX(10px); /*Moves everything to the right 10px when you hover*/
+}
+
+.skills ul li i{
+    font-size: 1.2em;
+}
+
+.about-box h2{
+    font-size: 2.5em;
+}
+
+/*---------------------Projects page-------------------*/
+
+.project_circle{
+    width: 400px;
+    height: 300px; 
+    border: #46036f solid 3px;
+    border-top: none;
+    border-left: none ;
+    border-bottom-right-radius: 100%;
+    left: 0px;    
+    position: absolute;
+    z-index: 1;
+}
+
+#projects{
+    background-color: var(--background);
+    
+}
+
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+    z-index: 3;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.box{
+    /* border: 3px solid rgb(87, 23, 107); */
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.box:hover{
+    border: 1px solid rgb(166, 122, 169);
+}
+
+.box h1{
+    font-size: 2em;
+}
+
+.box p{
+    opacity:0.8;
+}
+
+.box img{
+    min-width: 25px;
+    border-radius:0.5em;
+}
+
+
+/*---------------------Contact page-------------------*/
+
+
+.contact_circle{
+    width: 400px;
+    height: 300px; 
+    border: #46036f solid 3px;
+    border-top: none;
+    border-right: none ;
+    border-bottom-left-radius: 100%;
+    right: 0px;    
+    position: absolute;
+    z-index: 1;
+}
+
+#contact{
+    background-color: var(--second-background);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.input-box span{
+    font-size: 1.5em;
+}
+
+form input{
+    font-size: 1.3em;
+    padding: 1em 5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+}
+
+form input:focus{ /*Focus means when you click, this is different from hover*/
+    background: rgb(229,229,229);
+}
+
+/*-------------------------------Footer-------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding-top: 15px;
+}
+
+
+
+
+
+/* @font-face {
+    font-family:AgencyB ;
+    src: url(fonts/AGENCYB.TTF);
+}
+@font-face {
+    font-family: AgencyR;
+    src: url(fonts/AGENCYR.TTF);
+
+}
+@font-face {
+    font-family: Heavynexa;
+    src: url(fonts/Nexa-Heavy.ttf);
+}
+@font-face {
+    font-family:Lightnexa;
+    src: url(fonts/Nexa-ExtraLight.ttf);
+}
+@font-face {
+    font-family: Margarethy;
+    src: url(fonts/Margarethy.ttf);
+} 
+
+
+
+
+ .menu_main{
+    background-color: black;
+    margin: 0px;
+    /* font-family:Lightnexa;
+    list-style-type: none;
+    float: right;
+    margin-right: 300px;
+    margin-top: 20px; 
+    font-size: 22px;  
+} 
+
+
+
+ .initial1{
+    font-family:Margarethy ;
+    list-style-type: none;
+    font-size: 50px;
+    font-weight: 15px;
+}
+.initial2{
+    font-family: Margarethy;
+    list-style-type: none;
+    font-size: 50px;
+    /* margin-left: 30px; 
+    font-weight: 15px;
+    
+} 
+
+
+
+/* .Hello{
+    font-family: Lightnexa;
+    padding-top: 50px;
+    padding-left: 50px;
+    color:white;
+}
+
+.Hello_message{
+    height: 400px;
+    width: 400px;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 0px;
+    color:white;
+}
+
+.Hello_div{
+    padding-top:200px ;
+    font-family: AgencyR;
+    font-size: 20px;
+} */
+
+
+/* .menu_main{
+    font-family:Lightnexa;
+    list-style-type: none;
+    float: right;
+    margin-right: 300px;
+    margin-top: 20px; 
+    font-size: 22px;
+   
+
+} */
+/* .menu{ 
+    float: left;
+    //margin: 10px;
+    
+    text-decoration: none;
+}
+.menu_main:hover{
+    font-family: Heavynexa;  
+    color: rgb(39, 30, 30); 
+   
+}
+
+
+
+body{
+
+    /*background-position: 300px 300px;*/
+    /*background-color:rgba(65, 61, 61, 0.627);
+    /*margin-top: 50px;
+    /*background-position:0px 100px;  
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: rgb(21, 17, 17);
+    
+    background-size: contain;
+  
+   
+    
+}
+
+.section2{
+    background-color:rgba(247, 245, 249, 0.3) ;
+    font-family: Lightnexa;
+    border-radius: 25px;
+    color: white;
+    height: 500px;
+    margin-bottom: 150px;   
+
+   
+}
+
+.section_title1{ 
+    text-align: center;
+    font-family: Lightnexa;
+    font-size: 30px;
+    padding-top:40px;
+}
+
+.section_title1:hover{
+   font-size: 35px;
+   
+}
+
+.Project_gallery{
+   
+    /* margin-right: 20%; 
+    margin-top: 60px;
+    position: relative;
+    left: 300px;
+   
+    top: 0;
+    bottom: 0;
+    
+    right:0;
+    margin: auto;
+    /* float: right; 
+ 
+   
+}
+
+.Project1{    
+   float: left;
+   padding: 10px;
+   padding-left:130px; 
+   position: relative;
+
+   
+}
+
+.Projectimg{
+    height: 250px;
+    width: 200px;  
+    border-radius: 5px;    
+}
+
+.Projectimg:hover{
+    height: 270px;
+    width: 220px;   
+}
+
+
+.desc{
+    width: 200px;
+    text-align: center;
+}
+
+.section3{
+    border-style: solid;
+    border-width: 5px;
+    
+    text-align: center;
+} */
+ 
