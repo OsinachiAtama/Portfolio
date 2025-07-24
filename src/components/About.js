@@ -4,8 +4,8 @@ import profileImg from "../images/profile1.png";
 function About() { 
     return ( 
         <section id="about">
-        <div class="about-box">
-            <div class="about-info">
+        <div className="about-box">
+            <div className="about-info">
                 <h1><span>About me</span></h1>
                 <p> I love to learn and I love collaboration. While I can work 
                     excellently to achieve my goals, I believe I function best 
@@ -18,23 +18,23 @@ function About() {
 
             <h2><span>Skills</span></h2>
 
-            <div class=" skills"> 
+            <div className=" skills"> 
                 <ul>
                     <li>
-                        <span><i class='bx bx-chevron-right'></i>HTML</span>
+                        <span><i className='bx bx-chevron-right'></i>HTML</span>
                     </li>
 
                     <li>
-                        <span><i class='bx bx-chevron-right'></i>CSS</span>
+                        <span><i className='bx bx-chevron-right'></i>CSS</span>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <span><i class='bx bx-chevron-right'></i>C++</span>
+                        <span><i className='bx bx-chevron-right'></i>C++</span>
                     </li>
 
                     <li>
-                        <span><i class='bx bx-chevron-right'></i>Python</span>
+                        <span><i className='bx bx-chevron-right'></i>Python</span>
                     </li>
                 </ul>
             </div>

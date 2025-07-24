@@ -1,15 +1,15 @@
 import React from "react";
-import calc from "..images/calc.png"
-import turner from "..images/turner_cb.png"
-import plastics from "..images/plastic.png"
+import calc from "../images/calc.png"
+import turner from "../images/turner_cb.png"
+import plastics from "../images/plastic.png"
 
 function Projects () { 
     return ( 
         <section id="Projects">
-        <h1 class="header"><span>Projects</span></h1>
+        <h1 className="header"><span>Projects</span></h1>
         
-        <div class="project-container">
-            <div class="box">
+        <div className="project-container">
+            <div className="box">
                 <h1><span>Plasti-bot</span></h1>
                 <p>
                     Collaborating with peers at Tufts IDEA lab to create an 
@@ -22,7 +22,7 @@ function Projects () {
 
             </div>
 
-            <div class="box">
+            <div className="box">
                 <h1><span>Floor</span></h1>
                 <p>
                     Developed a demo chatbot to help new hires get acquainted 
@@ -34,7 +34,7 @@ function Projects () {
 
             </div>
 
-            <div class="box">
+            <div className="box">
                 <h1><span>Calc-U-Later</span></h1>
                 <p>
                   Designed a GUI standalone calculator with PEDMAS and 
