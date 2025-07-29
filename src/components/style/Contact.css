@@ -1,0 +1,50 @@
+/*---------------------Contact page-------------------*/
+
+
+.contact_circle{
+    width: 400px;
+    height: 300px; 
+    border: #46036f solid 3px;
+    border-top: none;
+    border-right: none ;
+    border-bottom-left-radius: 100%;
+    right: 0px;    
+    position: absolute;
+    z-index: 1;
+}
+
+#contact{
+    background-color: var(--second-background);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.input-box span{
+    font-size: 1.5em;
+}
+
+form input{
+    font-size: 1.3em;
+    padding: 1em 5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+}
+
+form input:focus{ /*Focus means when you click, this is different from hover*/
+    background: rgb(229,229,229);
+}

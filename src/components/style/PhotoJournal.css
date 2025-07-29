@@ -1,0 +1,76 @@
+#journal{ 
+  background-color: var(--second-background);
+  padding: 40px;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.floating-circles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;  
+  padding-bottom: 100px;
+  
+}
+
+#renderImgs{ 
+  position: relative; /*Note z-index only works if you have position set up*/
+  width: 100%; 
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+
+}
+
+.nature_img{ 
+  width: 300px;
+  margin: 10px;
+  border-radius: 2%;
+}
+
+
+.circle {
+  position: absolute;
+  bottom: 1px; /* start below screen */
+  border-radius: 50%;
+  border: #46036f solid 1px;
+  animation: rise 10s linear infinite;
+  z-index: 0;
+}
+
+.circleS {
+    width: 50px;
+    height: 50px;
+}
+
+.circleM {
+    width: 100px;
+    height: 100px;
+}
+
+.circleB{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+/* Keyframe for floating up */
+@keyframes rise {  /*This defines how an object should behave through out the animation*/
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-85vh) scale(1.2);
+    opacity: 0;
+  }
+}
+

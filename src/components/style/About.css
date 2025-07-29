@@ -1,0 +1,117 @@
+/*---------------------About page-------------------*/
+
+
+.about_circle{
+    width: 400px;
+    height: 300px; 
+    border: #46036f solid 3px;
+    border-top: none;
+    border-right: none ;
+    border-bottom-left-radius: 100%;
+    right: 0px;    
+    position: absolute;
+    z-index: 1;
+}
+#about{
+    background-color: var(--second-background);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap:5em;
+    margin-top: 100px;
+   
+}
+
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+    z-index: 3;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+
+.about-box h1{
+    font-size: 5em;
+}
+
+.about-box p{
+    color:black;
+    opacity: 0.8;
+}
+
+.skills{
+    display: flex;
+}
+
+.skills ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; /*Divides available space into two equal parts*/
+    column-gap: 1em;
+    color: white;
+    opacity:0.8;
+    align-items: baseline;
+    justify-items: start;
+    margin-left: 0;
+}
+
+.skills ul li span{
+    display:flex;
+    align-items: left;
+    font-size: 1.3em;
+    transition: 0.3s ease-in-out;
+}
+
+.skills ul li span:hover{
+    transform: translateX(10px); /*Moves everything to the right 10px when you hover*/
+}
+
+.skills ul li i{
+    font-size: 1.2em;
+}
+
+.about-box h2{
+    font-size: 2.5em;
+}
+
+@media(max-width:1000px) { 
+    .about_circle{
+        width: 300px;
+        height: 200px; 
+    }
+}
+
+@media(max-width:800px) { 
+    #about { 
+        flex-direction: column;
+        gap: 1em;
+        padding: 10px;
+    }
+
+   #about img { 
+        width: 60vw;
+        margin-top: 60px;
+    }
+
+    .about-box h1{
+        font-size: 3em;
+    }
+
+   .about-box{ 
+        margin-top: 0px;
+        padding: 10px;
+    
+        width: 100%;
+   }
+
+   .skills ul li span{
+        font-size: 1em;
+    }
+}

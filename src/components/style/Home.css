@@ -1,0 +1,106 @@
+.home_circle{
+    top: 0;
+    width: 500px;
+    height: 300px; 
+    border-bottom-right-radius: 100%;
+    border: #46036f 3px solid;
+    border-top: none;
+    border-left:none ;
+    position: absolute;
+    z-index: 1;
+}
+
+#home{
+    /* border-color: #c0a3d2;
+    border-style: solid ; */
+    display: flex;
+    /*This stacks everything in the flex from top to bottom*/
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+    color: black;
+    z-index: 1;
+}
+
+.profile{
+    width: 40vh; /*25% view port height, useful in creating responsive designs
+    vw means viewport width*/
+    border-radius: 50%;
+    /* margin-top: 3em; */
+    z-index: 2;
+}
+
+
+.icon{
+    font-size: 3em ;
+    color:  #46036f;
+}  
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap:0.5em;
+    max-width: 700px;
+}
+
+.info-box h1{
+    font-size: 4.7em;
+    font-weight: 500;
+}
+
+.info-box h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.info-box p{
+    opacity: 0.7;
+}
+
+@media(max-width: 1080px){ 
+    .info-box{ 
+        margin-top: 150px;
+    }
+    .info-box h1{
+        font-size: 3.5em;   
+    }
+    .info-box h3{
+        font-size: 1.5em;
+    }   
+}
+
+@media(max-width: 860px){ 
+
+    .home_circle{
+        top: 0;
+        width: 300px;
+        height: 200px; 
+    }
+    #home { 
+        flex-direction: column;
+        margin-top: 200px;
+        width: 100%; 
+        padding: 0;
+    }
+
+    .info-box{ 
+        margin: 0 auto; 
+        padding: 10px;
+        /* width: 100vw; */
+        /* margin-top: 50px; */
+    }
+
+    .info-box h1{
+        font-size: 2em;   
+    }
+    .info-box h3{
+        font-size: 1.5em;
+    }
+
+    .profile { 
+        margin: 0 auto;
+    }
+}
