@@ -22,7 +22,7 @@ export default function Navbar() {
                 <Link to = "/Projects" className="menu_item">Projects</Link>
                 <Link to = "/PhotoJournal" className="menu_item">Photo Journal</Link>
                 {/* <a href="#contact">Contact</a> */}
-                <a href="https://docs.google.com/document/d/15bx5w6itOr2MkXTo_YjRsiiTMItWhS0G/edit?usp=sharing&ouid=110801441156730051472&rtpof=true&sd=true" className="btn" id = "resume">Resume</a>
+                <a href="https://docs.google.com/document/d/1Rm9aoWEEORMaM9qXgwSwrDzKM_brZgFI/edit?usp=sharing&ouid=110801441156730051472&rtpof=true&sd=true" className="btn" id = "resume">Resume</a>
             </ul>   
         </nav>
     )

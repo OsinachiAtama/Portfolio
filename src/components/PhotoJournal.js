@@ -52,6 +52,20 @@ export default function Journal () {
         <>
             <section id="journal"> 
                <div className="floating-circles">{Circles()}</div>
+               <div className="blob">
+                    <h1><span>Hello and welcome! </span></h1><br/>
+                    Whether you're a recruiter, professor, fellow student, friend, or family member—I'm truly glad you’re here.
+                    Photography, especially of nature, is one of my favorite ways to slow down and capture the beauty around me. 
+                    Most of the photos you'll see here are from moments that caught my eye and stayed with me. <br/>
+
+                    I’m excited to share a glimpse of what I see through my lens, and I hope you enjoy exploring this collection as 
+                    much as I’ve enjoyed creating it. <br/>
+
+                    Thank you for stopping by! <br/>
+                    <span>- Osinachi </span>
+
+
+               </div>
                <div id="renderImgs"> 
                     { 
                         //React's map uses two options one passing the element, the other passing the index

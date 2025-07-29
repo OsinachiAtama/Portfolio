@@ -19,9 +19,12 @@ export default function Home() {
             My passion is creating innovative solutions both in business and
             technological spaces.
           </p>
+          <span> Great to meet you!</span>
           <h4>
-            <span> Great to meet you!</span>
+            <span>P.S. Nature lover? You might just enjoy my photo journal!</span> 
+            
           </h4>
+         
 
           <div className="btn-box">
             <a
